@@ -70,7 +70,7 @@ function printReceipt(){
 function calculateSubtotal(order, quantity){
     let price; //Declare price
 
-    switch(order){
+    switch(order){ //What if statement to determine price
         case "Chicken meal":
             price = 75;
             break;
@@ -84,7 +84,7 @@ function calculateSubtotal(order, quantity){
             return 0;
     }
 
-    return price * quantity;
+    return price * quantity; //Return the sub total
 }
 
 function calculateDiscount(total, customType){
